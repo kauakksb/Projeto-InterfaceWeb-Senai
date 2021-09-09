@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/logo-aluka.ico" type="img">
+    <link href="../css/style-pagina-de-compra.css" rel="stylesheet" type="text/css">
+    <title>Página de Compra</title>
+</head>
+<body>
+    <div class="sup">
+        <!--Cabeçalho da página-->
+        <header class="cabeçalho">
+            <div class="menu">
+                <img src="../imagens/botao-de-menu-de-tres-linhas-horizontais.png" alt="">
+            </div>
+            <!--Logo da empresa-->
+            <div class="logo">
+                <a href="pagina-inicial.html"><img src="../imagens/logo-aluka-completa.png" alt="Logo da Empresa" ></a>
+            </div>
+            <!--Campo de pesquisa-->
+            <div class="pesquisa">
+                <input type="text" class="txt-busca" value="O que você deseja?">
+                <div class="botao"><img src="../imagens/lupa.png" alt="Lupa de pesquisa"></div>
+            </div>
+        </header>
+        <!--Corpo da página. Parte principal, onde estarão algumas ofertas de livros para os consumidores e opções de acesso/uso do site-->
+    </div>
+    <section class="geral">
+
+        <!--Barra lateral para acessar partes importantes do site-->
+        <div class="barra-lateral">
+            <div class="cont-barra-lateral">
+                <div class="inicio">
+                    <abbr title="Início"><a href="pagina-inicial.html"><img src="../imagens/casa.png" alt="Imagem da Home"></a></abbr>
+                </div>
+                <div class="perfil">
+                    <abbr title="Perfil"><a href="login.html"><img src="../imagens/perfil.png" alt=""></a></abbr>
+                </div>
+                <div class="streaming">
+                    <abbr title="Streaming"><a href=""><img src="../imagens/livro-fechado-objeto-preto.png" alt=""></a></abbr>
+                </div>
+                <div class="carrinho">
+                    <abbr title="Carrinho"><a href="#"><img src="../imagens/contorno-do-simbolo-da-interface-comercial-do-carrinho-de-compras.png" alt=""></a></abbr>
+                </div>
+                <div class="categ">
+                    <abbr title="Categorias"><a href="#"><img src="../imagens/menu-de-pontos.png" alt=""></a></abbr>
+                </div>
+                <div class="config">
+                    <a href="#"><img src="" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!--Produtos. Principais podutos oferecidos pelo site-->
+        <div class="corpo-pag">
+            <div class="resto-da-página">
+                <div class="corp"> 
+                    <!--Dados so comprador que está logado no site-->
+                    <div class="Ddc">
+                        <h2>Dados do comprador</h2>
+                        <p><strong>Nome:</strong> (nome)</p>
+                        <p><b>CPF/CNPJ:</b> (cpf/cnpj)</p>
+                    </div>
+                    <!--Endereço de entrega de acordo com o cadastro do comprador que está logado-->
+                    <div class="End">
+                        <div class="Ede">
+                            <h2>Endereço de entrega</h2>
+                            <p><b>UF:</b> (uf)</p>
+                            <p><b>Cidade:</b> (cidade)</p>
+                            <p><b>Bairro:</b> (bairro)</p>
+                            <p><b>Rua:</b> (rua)</p>
+                            <p><b>Número da Casa/Apartamento:</b> (000)</p>
+                            <p><b>CEP:</b> (00000-000)</p>
+                        </div>
+                        <!--Área para adicionar um endereço diferente como destinatário-->
+                        <div class="Aoe">
+                            <h2>Adicionar outro endereço</h2>
+                            <p><b>Nome do destinatário(completo):</b></p>
+                            <input type="text">
+                            <p><b>CEP:</b></p>
+                            <input type="text" value="00000-000">
+                            <input type="submit" value="Adicionar">
+                        </div>
+                    </div>
+                    <!--Imagens dos cartões de crédito que podem ser utilizados-->
+                    <div class="sec">
+                        <div class="Fdp">
+                            <h2>Forma de Pagamento</h2>
+                            <img class="img1" src="" alt="Visa"></img>
+                            <img class="img2" src="" alt="MasterCard"></img>
+                            <img class="img3" src="" alt="Elo"></img>
+                            <img class="img1" src="" alt="Alelo"></img>
+                            <img class="img2" src="" alt="Hipercard"></img>
+                            <img class="img3" src="" alt="Maestro"></img>
+                        </div>
+                            <!--Dados do cartão de crédito que será usado para pagar o livro-->
+                        <div class="tdados">
+                            <div class="sec1">
+                                <div class="dados">
+                                    <div class="ndc">
+                                        <p><b>Número do Cartão:</b></p>
+                                        <input type="text" value="0000000000000000" required>
+                                    </div>
+                                    <div class="val">
+                                        <p><b>Validade:</b></p>
+                                        <input type="date" required>
+                                    </div>
+                                    <div class="cds">
+                                        <p><b>Código de Segurança:</b></p>
+                                    </div>
+                                    <div class="ndp">
+                                        <p><b>Número de Parcelas:</b></p>
+                                        <!--Área para selecionar quantas vezes será feito o parcelamento-->
+                                        <select class="sl1" size="1" required>
+                                            <optgroup label="Selecione o número de parcelas"></optgroup>
+                                                <option value="1 x R$ 00,00 (R$ 00,00)">1 x R$ 00,00 (R$ 00,00)</option>
+                                                <option value="2 x R$ 00,00 (R$ 00,00)">2 x R$ 00,00 (R$ 00,00)</option>
+                                                <option value="3 x R$ 00,00 (R$ 00,00)">3 x R$ 00,00 (R$ 00,00)</option>
+                                                <option value="4 x R$ 00,00 (R$ 00,00)">4 x R$ 00,00 (R$ 00,00)</option>
+                                                <option value="5 x R$ 00,00 (R$ 00,00)">5 x R$ 00,00 (R$ 00,00)</option>
+                                                <option value="6 x R$ 00,00 (R$ 00,00)">6 x R$ 00,00 (R$ 00,00)</option>
+                                                <option value="7 x R$ 00,00 (R$ 00,00)">7 x R$ 00,00 (R$ 00,00)</option>
+                                                <option value="8 x R$ 00,00 (R$ 00,00)">8 x R$ 00,00 (R$ 00,00)</option>
+                                                <option value="9 x R$ 00,00 (R$ 00,00)">9 x R$ 00,00 (R$ 00,00)</option>
+                                                <option value="10 x R$ 00,00 (R$ 00,00)">10 x R$ 00,00 (R$ 00,00)</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sec2">
+                                <div class="ntc">
+                                    <p><b>Nome do titular do cartão:</b></p>
+                                    <input type="text" required>
+                                </div>
+                                <div class="cpf">
+                                    <p><b>CPF/CNPJ do titular:</b></p>
+                                    <input type="text" required>
+                                </div>
+                                <div class="ddn">
+                                    <p><b>Data de nascimento:</b></p>
+                                    <input type="date" required>
+                                </div>
+                                <div class="tel">
+                                    <p><b>Telefone:</b></p>
+                                    <input type="" value="(00) 00000-0000" required>
+                                </div>
+                                    <!--Botão para realizar a compra-->
+                            </div>
+                        </div>
+                        <div class="fp">
+                            <button value="Finalizar Compra">Finalizar Compra</button>
+                        </div>
+                    </div>  
+                </div>
+                <!--Rodapé. Parte inferior do site onde estarão informações importantes sobre o site-->
+                <div class="rodap">
+                    <footer class="rodape">
+                        <hr>
+                        <div class="acesso-geral">
+                            <!--Informações gerais do site-->
+                            <h1>Informações</h1>
+                            <!--Acesso à descrição da empresa-->
+                            <div class="box-rodape">
+                                <div class="bloc">
+                                    <a href="quem-somos-nos.html">
+                                        <img src="../imagens/predio-.png" alt="">
+                                        <h2>Quem somos nós?</h2>
+                                        <p class="text">
+                                            Quer saber mais sobre nós e quais são nossos ojetivos? Clique Aqui para conhecer um pouco da nossa história!
+                                        </p>
+                                    </a>
+                                </div>
+                                <!--Acesso aos meios de contato da empresa-->
+                                <div class="bloc">
+                                    <a href="contato.html">
+                                        <img src="../imagens/telefone.png" alt="">
+                                        <h2>Fale Conosco</h2>
+                                        <p class="text">
+                                            Está com algum problema ou dúvida? Clique Aqui para entrar em contato conosco!
+                                        </p>
+                                    </a>
+                                </div>
+                                <!--Acesso às redes sociais da empresa-->
+                                <div class="bloc-">
+                                    <img src="../imagens/midia-social.png" alt="">
+                                    <h2>Redes Sociais</h2>
+                                    <ul class="social-list" type="none">
+                                        <li><img src="../imagens/instagram.png" alt=""><a href="">Instagram</a></li>
+                                        <li><img src="../imagens/facebook.png" alt=""><a href="">Facebook</a></li>
+                                        <li><img src="../imagens/tiktok.png" alt=""><a href="">TikTok</a></li>
+                                        <li><img src="../imagens/twitter.png" alt=""><a href="">Twitter</a></li>
+                                    </ul>
+                                </div>
+                                <!--Formas de pagamento-->
+                                <div class="bloc-">
+                                    <!--Exibição dos meios de pagamentos aceitos pela empresa-->
+                                    <img src="../imagens/icones-de-dinheiro.png" alt="">
+                                    <h2>Formas de pagamento</h2>
+                                    <div class="cont-pgmt">
+                                        <div>
+                                            <img style="height: 17.5px;" src="../imagens/visa-logo-.png" alt="Meio de pagamento 3">
+                                            <img style="height: 27px;" src="../imagens/elo-logo-.png" alt="Meio de pagamento 4">
+                                        </div>
+                                        <div>
+                                            <img src="../imagens/maestro-logo.png" alt="Meio de pagamento 1">
+                                            <img src="../imagens/mastercard-logo-.png" alt="Meio de pagamento 2">
+                                        </div>
+                                        <div>
+                                            <img style="height: 30px" src="../imagens/hipercard_logo.png" alt="Meio de pagamento 5">
+                                            <img style="height: 30px;" src="../imagens/alelo-logo.png" alt="Meio de pagamento 6">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="base-rodape">
+                            <h2>Institucional</h2>
+                            <div class="inst-list">
+                                <ul type="none">
+                                    <li><a href="">Políticas de Vendas, Trocas e Privacidade</a></li>
+                                    <li><a href="">Relações com Investidores</a></li>
+                                    <li><a href="">Eventos</a></li>
+                                    <li><a href="">Termos e Condições de Compra</a></li>
+                                </ul>
+                            </div>
+                            <div class="parte-final">
+                                As ofertas são válidas por tempo determinado e/ou enquanto durarem os estoques. 
+                                Nosso serviço de entregas não permite encomendas feitas com endereçamento de Caixa Postal.
+                                Os preços apresentados no site não são obrigatoriamente iguais aos apresentados na rede de 
+                                lojas físicas da Aluka, e somente são válidos para as compras efetuadas no ato de sua exibição. 
+                                Aluka.com.br é uma empresa do grupo Aluka e Aluka LTDA, CNPJ nº 00.000.000/0000-00, 
+                                Rua Basquete Inconstitucional da Silva Santos, nº 777, GV – MG.
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
