@@ -341,42 +341,6 @@ body{
     background-color: #020079;
 }
 
-/* Item da barra de navegação */
-.nav > #item-{
-    padding: 6px 30px;
-    color: rgb(255, 255, 255);
-    font-family: Calibri, sans-serif;
-    font-size: 18px;
-    color: #ffffff;
-    margin-left: 50px;
-}
-
-/* Área de categorias da barra de navegação */
-.categorias{
-    display: flex;
-    flex-direction: row;
-}
-
-/* Categoria da barra de navegação */
-.categorias > .item{
-    padding: 11px 30px;
-    border-left: solid 1px rgb(255, 255, 255);
-    border-right: solid 1px rgb(255, 255, 255);
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 12.5px;
-}
-
-/* Link da barra de navegação */
-.categorias > .item > a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-.categorias > .item > a:hover{
-    text-decoration: underline;
-    color: rgb(255, 255, 255);
-}
-
 /* Produtos/Rodapé */
 .resto-da-página{
     padding-top: 35px;
@@ -770,7 +734,7 @@ body{
 
 .base-rodape > .parte-final{
     margin-top: 45px;
-    width: 1200px;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     text-align: center;

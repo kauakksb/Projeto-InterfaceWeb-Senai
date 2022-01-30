@@ -12,8 +12,8 @@
     <div class="sup">
         <!--Cabeçalho da página-->
         <header class="cabeçalho">
-            <div class="menu">
-                <img src="../imagens/botao-de-menu-de-tres-linhas-horizontais.png" alt="">
+            <div id="menu">
+                <img src="../imagens/botao-de-menu-de-tres-linhas-horizontais.png" alt="Botão de Menu">
             </div>
             <!--Logo da empresa-->
             <div class="logo">
@@ -21,39 +21,41 @@
             </div>
             <!--Campo de pesquisa-->
             <div class="pesquisa">
-                <input type="text" class="txt-busca" value="O que você deseja?">
+                <input type="text" class="txt-busca" placeholder=" Pesquisar">
                 <div class="botao"><img src="../imagens/lupa.png" alt="Lupa de pesquisa"></div>
             </div>
         </header>
-        <!--Corpo da página. Parte principal, onde estarão algumas ofertas de livros para os consumidores e opções de acesso/uso do site-->
     </div>
+
+    <!--Corpo da página. Parte principal, onde estarão algumas ofertas de livros para os consumidores e opções de acesso/uso do site-->
     <section class="geral">
 
         <!--Barra lateral para acessar partes importantes do site-->
-        <div class="barra-lateral">
-            <div class="cont-barra-lateral">
-                <div class="inicio">
+        <div id="barra-lateral">
+            <div id="cont-barra-lateral">
+                <div id="inicio">
                     <abbr title="Início"><a href="pagina-inicial.html"><img src="../imagens/casa.png" alt="Imagem da Home"></a></abbr>
                 </div>
-                <div class="perfil">
+                <div id="perfil">
                     <abbr title="Perfil"><a href="login.html"><img src="../imagens/perfil.png" alt=""></a></abbr>
                 </div>
-                <div class="streaming">
-                    <abbr title="Streaming"><a href=""><img src="../imagens/livro-fechado-objeto-preto.png" alt=""></a></abbr>
+                <div id="streaming">
+                    <abbr title="Streaming"><a href="streaming.html"><img src="../imagens/livro-fechado-objeto-preto.png" alt=""></a></abbr>
                 </div>
-                <div class="carrinho">
-                    <abbr title="Carrinho"><a href="#"><img src="../imagens/contorno-do-simbolo-da-interface-comercial-do-carrinho-de-compras.png" alt=""></a></abbr>
+                <div id="carrinho">
+                    <abbr title="Carrinho"><a href="carrinho.html"><img src="../imagens/contorno-do-simbolo-da-interface-comercial-do-carrinho-de-compras.png" alt=""></a></abbr>
                 </div>
-                <div class="categ">
+                <div id="categ">
                     <abbr title="Categorias"><a href="#"><img src="../imagens/menu-de-pontos.png" alt=""></a></abbr>
                 </div>
-                <div class="config">
-                    <a href="#"><img src="" alt=""></a>
+                <div id="config">
+                    <abbr title="Configurações"><a href="#"><img src="../imagens/botao-de-roda-dentada-de-configuracoes.png" alt=""></a></abbr>
                 </div>
             </div>
         </div>
+
         <!--Produtos. Principais podutos oferecidos pelo site-->
-        <div class="corpo-pag">
+        <div id="corpo-pag">
             <div class="resto-da-página">
                 <div class="corp"> 
                     <!--Dados so comprador que está logado no site-->
@@ -239,4 +241,8 @@
             </div>
         </div>
     </section>
+
+    <script src="../js/script.js"></script>
+
 </body>
+</html>

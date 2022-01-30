@@ -331,51 +331,6 @@ body{
     margin-left: 60px;
 }
 
-/* Barra de navegação */
-.nav{
-    height: 35px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    background-color: #020079;
-}
-
-/* Item da barra de navegação */
-.nav > #item-{
-    padding: 6px 30px;
-    color: rgb(255, 255, 255);
-    font-family: Calibri, sans-serif;
-    font-size: 18px;
-    color: #ffffff;
-    margin-left: 50px;
-}
-
-/* Área de categorias da barra de navegação */
-.categorias{
-    display: flex;
-    flex-direction: row;
-}
-
-/* Categoria da barra de navegação */
-.categorias > .item{
-    padding: 11px 30px;
-    border-left: solid 1px rgb(255, 255, 255);
-    border-right: solid 1px rgb(255, 255, 255);
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 12.5px;
-}
-
-/* Link da barra de navegação */
-.categorias > .item > a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-.categorias > .item > a:hover{
-    text-decoration: underline;
-    color: rgb(255, 255, 255);
-}
-
 /* Produtos/Rodapé */
 .resto-da-página{
     padding-top: 35px;
@@ -524,21 +479,23 @@ body{
     display: flex;
     flex-direction: row;
     height: 300px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .box-rodape > .bloc{
-    width: 275px;
-    height: 275px;
+    width: 225px;
+    height: 225px;
     background-color: rgb(243, 243, 243);
     border-radius: 5px;
-    margin: 25px;
+    margin: 20px;
 }
 .box-rodape > .bloc:hover{
-    width: 275px;
-    height: 275px;
+    width: 225px;
+    height: 225px;
     background-color: rgb(209, 209, 209);
     border-radius: 5px;
-    margin: 25px;
+    margin: 20px;
 }
 
 .box-rodape > .bloc > a{
@@ -556,34 +513,36 @@ body{
 
 .box-rodape > .bloc > a > img{
     padding-top: 30px;
-    height: 65px;
+    height: 50px;
 }
 
 .bloc > a > .text{
-    width: 225px;
+    width: 210px;
     text-align: center;
+    font-size: 16px;
+    margin: 0px;
 }
 
 .box-rodape > .bloc-{
-    width: 275px;
-    height: 275px;
+    width: 225px;
+    height: 225px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(243, 243, 243);
     border-radius: 5px;
-    margin: 25px;
+    margin: 20px;
 }
 
 .box-rodape > .bloc-:hover{
-    width: 275px;
-    height: 275px;
+    width: 225px;
+    height: 225px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(209, 209, 209);
     border-radius: 5px;
-    margin: 25px;
+    margin: 20px;
 }
 
 .box-rodape > .bloc- > h2{
@@ -593,26 +552,27 @@ body{
 
 .box-rodape > .bloc- > img{
     padding-top: 20px;
-    height: 65px;
+    height: 50px;
 }
 
 .bloc- > .cont-pgmt > div > img{
-    height: 45px;
+    height: 35px;
 }
 
 .bloc- > .social-list{
-    width: 275px;
+    width: 250px;
     color: black;
+    margin-top: 0px;
 }
 
 .bloc- > .social-list > li > img{
-    height: 25px;
+    height: 18px;
 }
 
 .bloc- > .social-list > li > a{
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .base-rodape{
@@ -644,7 +604,7 @@ body{
 
 .base-rodape > .parte-final{
     margin-top: 45px;
-    width: 1200px;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     text-align: center;
