@@ -12,8 +12,8 @@
     <div class="sup">
         <!--Cabeçalho da página-->
         <header class="cabeçalho">
-            <div class="menu">
-                <img src="../imagens/botao-de-menu-de-tres-linhas-horizontais.png" alt="">
+            <div id="menu">
+                <img src="../imagens/botao-de-menu-de-tres-linhas-horizontais.png" alt="Botão de Menu">
             </div>
             <!--Logo da empresa-->
             <div class="logo">
@@ -21,117 +21,118 @@
             </div>
             <!--Campo de pesquisa-->
             <div class="pesquisa">
-                <input type="text" class="txt-busca" value="O que você deseja?">
+                <input type="text" class="txt-busca" placeholder=" Pesquisar">
                 <div class="botao"><img src="../imagens/lupa.png" alt="Lupa de pesquisa"></div>
             </div>
         </header>
-        <!--Corpo da página. Parte principal, onde estarão algumas ofertas de livros para os consumidores e opções de acesso/uso do site-->
+        <!--Área de navegação do site. Permite escolher os livros através de suas categorias-->
+        <div class="nav">
+            <div id="item-">
+                <strong>Escolha a categoria</strong>
+            </div>
+            <nav class="categorias">
+                <div class="item">
+                    <a href="#">
+                        Infantil
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        Infantojuvenil
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        Literatura Nacional
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        Literatura Estrangeira
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        Ficção Científica
+                    </a>
+                </div>  
+                <div class="item">
+                    <a href="#">
+                        Folclore
+                    </a>
+                </div>
+                <div class="item" style="border-right: none;">
+                    <a href="#">
+                        Romance
+                    </a>
+                </div>
+            </nav>
+        </div>
     </div>
+
+    <!--Corpo da página. Parte principal, onde estarão algumas ofertas de livros para os consumidores e opções de acesso/uso do site-->
     <section class="geral">
 
         <!--Barra lateral para acessar partes importantes do site-->
-        <div class="barra-lateral">
-            <div class="cont-barra-lateral">
-                <div class="inicio">
+        <div id="barra-lateral">
+            <div id="cont-barra-lateral">
+                <div id="inicio">
                     <abbr title="Início"><a href="pagina-inicial.html"><img src="../imagens/casa.png" alt="Imagem da Home"></a></abbr>
                 </div>
-                <div class="perfil">
+                <div id="perfil">
                     <abbr title="Perfil"><a href="login.html"><img src="../imagens/perfil.png" alt=""></a></abbr>
                 </div>
-                <div class="streaming">
+                <div id="streaming">
                     <abbr title="Streaming"><a href="streaming.html"><img src="../imagens/livro-fechado-objeto-preto.png" alt=""></a></abbr>
                 </div>
-                <div class="carrinho">
+                <div id="carrinho">
                     <abbr title="Carrinho"><a href="carrinho.html"><img src="../imagens/contorno-do-simbolo-da-interface-comercial-do-carrinho-de-compras.png" alt=""></a></abbr>
                 </div>
-                <div class="categ">
-                    <abbr title="Categorias"><a href=""><img src="../imagens/menu-de-pontos.png" alt=""></a></abbr>
+                <div id="categ">
+                    <abbr title="Categorias"><a href="#"><img src="../imagens/menu-de-pontos.png" alt=""></a></abbr>
                 </div>
-                <div class="config">
-                    <a href="#"><img src="" alt=""></a>
+                <div id="config">
+                    <abbr title="Configurações"><a href="#"><img src="../imagens/botao-de-roda-dentada-de-configuracoes.png" alt=""></a></abbr>
                 </div>
             </div>
         </div>
+
         <!--Produtos. Principais podutos oferecidos pelo site-->
-        <div class="corpo-pag">
-
-            <!--Área de navegação do site. Permite escolher os livros através de suas categorias-->
-            <div class="nav">
-                <div class="item-">
-                    <strong>Escolha a categoria</strong>
-                </div>
-                <nav class="categorias">
-                    <div class="item">
-                        <a href="#">
-                            Infantil
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            Infantojuvenil
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            Literatura Nacional
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            Literatura Estrangeira
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            Ficção Científica
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            Folclore
-                        </a>
-                    </div>
-                    <div class="item" style="border-right: none;">
-                        <a href="#">
-                            Romance
-                        </a>
-                    </div>
-                </nav>
-            </div>
+        <div id="corpo-pag">
             <div class="resto-da-página">
-                    <img class="imgL" src="" alt="Imagem do Livro selecionado"></img>
-                <div class="info">
-                    <h2 class="Ndl">Nome do Livro</h2> <!-- Nome do Livro selecionado -->
-                    <div>
-                        <h3 class="Nda">Nome do Autor</h3> <!-- Nome do autor do Livro selecionado -->
-                        <h3 class="Edt">Editora</h3>       <!-- Nome da editora Livro selecionado -->
-                        <h3 class="Pre">R$ 00,00</h3>      <!-- Preço do Livro selecionado -->
+                <div id="aux">
+                    <img id="imgL" src="" alt="Imagem do Livro selecionado"></img>
+                    <div class="info">
+                        <h2 class="Ndl">Nome do Livro</h2> <!-- Nome do Livro selecionado -->
                         <div>
-                            <h3 class="Fre">Frete</h3>         <!-- Valor a pagar pelo transporte do Livro selecionado-->
+                            <h3 class="Nda">Nome do Autor</h3> <!-- Nome do autor do Livro selecionado -->
+                            <h3 class="Edt">Editora</h3>       <!-- Nome da editora Livro selecionado -->
+                            <h3 class="Pre">R$ 00,00</h3>      <!-- Preço do Livro selecionado -->
+                            <div>
+                                <h3 class="Fre">Frete</h3>         <!-- Valor a pagar pelo transporte do Livro selecionado-->
+                            </div>
                         </div>
+                    
+                        <div>
+                            <h3 class="Av"><legend>Avaliação</legend></h3>
+                                    <input type="radio" name="ra2" class="r2" value="1 estrela">
+                                    <label for="r2">1</label>
+                    
+                                    <input type="radio" name="ra2" class="r3" value="2 estrelas">
+                                    <label for="r2">2</label>
+                    
+                                    <input type="radio" name="ra2" class="r4" value="3 estrelas">       <!-- Avaliação do Livro selecionado -->
+                                    <label for="r2">3</label>
+                    
+                                    <input type="radio" name="ra2" class="r5" value="4 estrelas">
+                                    <label for="r2">4</label>
+                                    <input type="radio" name="ra2" class="r6" value="5 estrelas">
+                                    <label for="r2">5</label>
+                                    <input type="submit" class="Ava" value="Avaliar">
+                        </div><br>
+                            <a href="#" class="Com">Comprar</a><br><br><br>              <!-- Botão parar ir até a página de compra do Livro selecionado -->
+                            <a href="#" class="Car">Adicionar ao Carrinho</a> <!-- Botão para adicionar o Livro selecionado ao seu Carrinho -->
                     </div>
-                
-                    <div>   
-                        <h3 class="Av"><legend>Avaliação</legend></h3> 
-                                <input type="radio" name="ra2" class="r2" value="1 estrela">
-                                <label for="r2">1</label>
-                                
-                                <input type="radio" name="ra2" class="r3" value="2 estrelas">
-                                <label for="r2">2</label>
-                                                                                            
-                                <input type="radio" name="ra2" class="r4" value="3 estrelas">       <!-- Avaliação do Livro selecionado -->
-                                <label for="r2">3</label>
-                                
-                                <input type="radio" name="ra2" class="r5" value="4 estrelas">
-                                <label for="r2">4</label>
-
-                                <input type="radio" name="ra2" class="r6" value="5 estrelas">
-                                <label for="r2">5</label>
-
-                                <input type="submit" class="Ava" value="Avaliar">
-                    </div><br>
-                        <a href="" class="Com">Comprar</a><br><br><br>              <!-- Botão parar ir até a página de compra do Livro selecionado -->
-                        <a href="" class="Car">Adicionar ao Carrinho</a> <!-- Botão para adicionar o Livro selecionado ao seu Carrinho -->
                 </div>
                 <div class="info2">
                     <div class="Desc">
@@ -140,126 +141,155 @@
                     </div>
                     <div class="Deta">
                         <h4 class="Det">Detalhes</h4> <!-- Detalhes do Livro selecionado (Dividido em uma tabela) --> 
-                        <div class="Detal">    
-                            <table>
-                                <tr>
-                                    <th>Peso</th>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <th>Altura</th>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <th>Largura</th>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <th>Espessura</th>
-                                    <td>1</td>
-                                </tr>
-                            </table>
+                        <div id="detal">
+                            <ul type = "none">
+                                <li>
+                                    <p>
+                                        <strong>Peso:</strong>
+                                    </p>
+                                    <p>
+                                        Peso do Livro
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Altura:</strong>
+                                    </p>
+                                    <p>
+                                        Altura do Livro
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Largura:</strong>
+                                    </p>
+                                    <p>
+                                        Largura do Livro
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Esperssura:</strong>
+                                    </p>
+                                    <p>
+                                        Espessura do Livro
+                                    </p>
+                                </li>
+                            </ul>  
                         </div>
                     </div>
                     <div class="Espe">
                         <h4 class="Esp">Especificação</h4> <!-- Especificação do Livro selecionado (Dividido em uma tabela) --> 
-                        <div class="Espec">    
-                            <table>
-                                <tr>
-                                    <th>Autor</th>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <th>Editora</th>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <th>Edição</th>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <th>Idioma</th>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <th>Número de páginas</th>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <th>Encadernação</th>
-                                    <td>1</td>
-                                </tr>
-                            </table>
+                        <div id="espec">  
+                            <ul type="none">
+                                <li>
+                                    <p>
+                                        <strong>Autor:</strong>
+                                    </p>
+                                    <p>
+                                        Nome do Autor
+                                    </p> 
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Editora:</strong>
+                                    </p>
+                                    <p>
+                                        Nome da Editora
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Edição:</strong>
+                                    </p>
+                                    <p>
+                                        Número da Edição
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Idioma:</strong>
+                                    </p>
+                                    <p>
+                                        Idioma do Livro
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Número de Páginas:</strong>
+                                    </p>
+                                    <p>
+                                        Páginas
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Encadernação:</strong>
+                                    </p>
+                                    <p>
+                                        Modo de Encadernação
+                                    </p>
+                                </li>
+                            </ul>  
                         </div>
                     </div>
                 </div>
+                <section id="produtos">
                     <h2>Recomendados</h2> <!-- Livros recomendados -->
-                    <section class="produtos">
-                        <!--Promoções. Ofertas de produtos com descontos para os clientes-->
-                        <div class="prod-list">
-                            <div id="box-list">
-                                <div class="box-prod">
-                                    <a href="#">
-                                        <img src="../imagens/Livro Azul.jpeg" alt="Imagem de Produto1"><br>
-                                        <p class="nome">
-                                            O Fabuloso Livro Azul - Andrew Lang | Editora HomeBooks <br>
-                                        </p>
-                                        <p class="preco">
-                                            R$29,90
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="box-prod">
-                                    <a href="">
-                                        <img src="../imagens/Livro Verde.jpeg" alt="Imagem de Produto1"><br>
-                                        <p class="nome">
-                                            O Fabuloso Livro Azul - Andrew Lang | Editora HomeBooks <br>
-                                        </p>
-                                        <p class="preco">
-                                            R$29,90
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="box-prod">
-                                    <a href="#">
-                                        <img src="../imagens/Livro Vermelho.jpeg" alt="Imagem de Produto1"><br>
-                                        <p class="nome">
-                                            O Fabuloso Livro Azul - Andrew Lang | Editora HomeBooks <br>
-                                        </p>
-                                        <p class="preco">
-                                            R$29,90
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="box-prod">
-                                    <a href="#">
-                                        <img src="../imagens/O menino do dedo verde.jpeg" alt="Imagem de Produto1"><br>
-                                        <p class="nome">
-                                            O Fabuloso Livro Azul - Andrew Lang | Editora HomeBooks <br>
-                                        </p>
-                                        <p class="preco">
-                                            R$29,90
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="box-prod">
-                                    <a href="#">
-                                        <img src="../imagens/Livro Azul.jpeg" alt="Imagem de Produto1"><br>
-                                        <p class="nome">
-                                            O Fabuloso Livro Azul - Andrew Lang | Editora HomeBooks <br>
-                                        </p>
-                                        <p class="preco">
-                                            R$29,90
-                                        </p>
-                                    </a>
-                                </div>
+                    <!--Promoções. Ofertas de produtos com descontos para os clientes-->
+                    <div class="prod-list">
+                        <div id="box-list">
+                            <div class="box-prod">
+                                <a href="#">
+                                    <img src="../imagens/capa-livro-3.jpg" alt="Imagem de Produto1"><br>
+                                    <p class="nome">
+                                        O Fabuloso Livro Azul - Andrew Lang | Editora HomeBooks <br>
+                                    </p>
+                                    <p class="preco">
+                                        R$29,90
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="box-prod">
+                                <a href="#">
+                                    <img src="../imagens/capa-livro-.jpg" alt="Imagem de Produto1"><br>
+                                    <p class="nome">
+                                        O Fabuloso Livro Azul - Andrew Lang | Editora HomeBooks <br>
+                                    </p>
+                                    <p class="preco">
+                                        R$29,90
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="box-prod">
+                                <a href="#">
+                                    <img src="../imagens/capa-livro-2.jpg" alt="Imagem de Produto1"><br>
+                                    <p class="nome">
+                                        O Fabuloso Livro Azul - Andrew Lang | Editora HomeBooks <br>
+                                    </p>
+                                    <p class="preco">
+                                        R$29,90
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="box-prod">
+                                <a href="#">
+                                    <img src="../imagens/capa-livro-4.jpg" alt="Imagem de Produto1"><br>
+                                    <p class="nome">
+                                        O Fabuloso Livro Azul - Andrew Lang | Editora HomeBooks <br>
+                                    </p>
+                                    <p class="preco">
+                                        R$29,90
+                                    </p>
+                                </a>
                             </div>
                         </div>
+                    </div>
                 </section>
             </div>
             <div class="Coment">
                 <legend class="Come">Comentários</legend> <!-- Espaço para fazer um comentário sobre o Livro selecionado -->
-                    <textarea name="txt3" class="t3" rows="3" cols="150" autofocus maxlength="100" wrap=""></textarea><br><br>
+                    <textarea name="txt3" class="t3" rows="3" cols="125" maxlength="80" wrap=""></textarea><br><br>
                         <button class="Comenta" type="submit">Comentar</button>
             </div>
 
@@ -278,17 +308,17 @@
                     <div class="box-rodape">
                         <div class="bloc">
                             <a href="quem-somos-nos.html">
-                                <img src="../imagens/predio-.png" alt="">
+                                <img src="../imagens/predio-.png" alt="Ícone de prédio">
                                 <h2>Quem somos nós?</h2>
                                 <p class="text">
-                                    Quer saber mais sobre nós e quais são nossos ojetivos? Clique Aqui para conhecer um pouco da nossa história!
+                                    Quer saber mais sobre nós e nossos ojetivos? Saiba um pouco mais da nossa história!
                                 </p>
                             </a>
                         </div>
                         <!--Acesso aos meios de contato da empresa-->
                         <div class="bloc">
                             <a href="contato.html">
-                                <img src="../imagens/telefone.png" alt="">
+                                <img src="../imagens/telefone.png" alt="Ícone de contato">
                                 <h2>Fale Conosco</h2>
                                 <p class="text">
                                     Está com algum problema ou dúvida? Clique Aqui para entrar em contato conosco!
@@ -297,24 +327,24 @@
                         </div>
                         <!--Acesso às redes sociais da empresa-->
                         <div class="bloc-">
-                            <img src="../imagens/midia-social.png" alt="">
+                            <img src="../imagens/midia-social.png" alt="Ícone de Redes Sociais">
                             <h2>Redes Sociais</h2>
                             <ul class="social-list" type="none">
-                                <li><img src="../imagens/instagram.png" alt=""><a href="">Instagram</a></li>
-                                <li><img src="../imagens/facebook.png" alt=""><a href="">Facebook</a></li>
-                                <li><img src="../imagens/tiktok.png" alt=""><a href="">TikTok</a></li>
-                                <li><img src="../imagens/twitter.png" alt=""><a href="">Twitter</a></li>
+                                <li><img src="../imagens/instagram.png" alt="Ícone do Instagram"><a href="#">Instagram</a></li>
+                                <li><img src="../imagens/facebook.png" alt="Ícone do Facebook"><a href="#">Facebook</a></li>
+                                <li><img src="../imagens/tiktok.png" alt="Ícone do TikTok"><a href="#">TikTok</a></li>
+                                <li><img src="../imagens/twitter.png" alt="Ícone do Twitter"><a href="#">Twitter</a></li>
                             </ul>
                         </div>
                         <!--Formas de pagamento-->
                         <div class="bloc-">
                             <!--Exibição dos meios de pagamentos aceitos pela empresa-->
-                            <img src="../imagens/icones-de-dinheiro.png" alt="">
+                            <img src="../imagens/icones-de-dinheiro.png" alt="Ícone de Dinheiro">
                             <h2>Formas de pagamento</h2>
                             <div class="cont-pgmt">
                                 <div>
-                                    <img style="height: 17.5px;" src="../imagens/visa-logo-.png" alt="Meio de pagamento 3">
-                                    <img style="height: 27px;" src="../imagens/elo-logo-.png" alt="Meio de pagamento 4">
+                                    <img style="height: 12.5px;" src="../imagens/visa-logo-.png" alt="Meio de pagamento 3">
+                                    <img style="height: 22px;" src="../imagens/elo-logo-.png" alt="Meio de pagamento 4">
                                 </div>
                                 <div>
                                     <img src="../imagens/maestro-logo.png" alt="Meio de pagamento 1">
@@ -332,10 +362,10 @@
                     <h2>Institucional</h2>
                     <div class="inst-list">
                         <ul type="none">
-                            <li><a href="">Políticas de Vendas, Trocas e Privacidade</a></li>
-                            <li><a href="">Relações com Investidores</a></li>
-                            <li><a href="">Eventos</a></li>
-                            <li><a href="">Termos e Condições de Compra</a></li>
+                            <li><a href="#">Políticas de Vendas, Trocas e Privacidade</a></li>
+                            <li><a href="#">Relações com Investidores</a></li>
+                            <li><a href="#">Eventos</a></li>
+                            <li><a href="#">Termos e Condições de Compra</a></li>
                         </ul>
                     </div>
                     <div class="parte-final">
@@ -349,9 +379,80 @@
 
                 </div>
             </footer>
-            </div>
-            
         </div>
     </section>
+    <script>
+        var menu = window.document.getElementById('menu')
+        menu.onclick = controle
+
+        function controle(){
+            var barra = window.document.getElementById('barra-lateral')
+            var corpo = window.document.getElementById('corpo-pag')
+            var rest = window.document.getElementById('resto-da-página')
+            var prod = window.document.querySelectorAll('div.box-prod')
+            var item = window.document.getElementById('item-')
+            var img_prod = window.document.getElementById('imgL')
+            var info = window.document.getElementById('info')
+
+            var inicio = window.document.getElementById('inicio')
+            var perfil = window.document.getElementById('perfil')
+            var streaming = window.document.getElementById('streaming')
+            var carrinho = window.document.getElementById('carrinho')
+            var categ = window.document.getElementById('categ')
+            var config = window.document.getElementById('config')
+
+            
+            if (barra.style.width === "160px") {
+                diminuir()
+            } else{
+                aumentar()
+            }
+            
+            function diminuir(){
+                barra.style.width = "50px"
+                item.style.marginLeft = "50px"
+                corpo.style.width = "97%"
+                corpo.style.marginLeft = "60px"
+                inicio.innerHTML = '<abbr title="Início"><a href="pagina-inicial.html"><img src="../imagens/casa.png" alt="Imagem da Home"></a></abbr>'
+                perfil.innerHTML = '<abbr title="Perfil"><a href="login.html"><img src="../imagens/perfil.png" alt=""></a></abbr>'
+                streaming.innerHTML = '<abbr title="Streaming"><a href="login.html"><img src="../imagens/livro-fechado-objeto-preto.png" alt=""><p></p></a></abbr>'
+                carrinho.innerHTML = '<abbr title="Carrinho"><a href="carrinho.html"><img src="../imagens/contorno-do-simbolo-da-interface-comercial-do-carrinho-de-compras.png" alt=""><p></p></a></abbr>'
+                categ.innerHTML = '<abbr title="Categorias"><a href="#"><img src="../imagens/menu-de-pontos.png" alt=""><p></p></a></abbr>'
+                config.innerHTML = '<abbr title="Configurações"><a href="#"><img src="../imagens/botao-de-roda-dentada-de-configuracoes.png" alt=""></a></abbr>'
+                inicio.style.width = "50px"
+                perfil.style.width = "50px"
+                streaming.style.width = "50px"
+                carrinho.style.width = "50px"
+                categ.style.width = "50px"
+                config.style.width = "50px"
+                img_prod.style.marginLeft = "120px"
+                
+            }
+
+            function aumentar(){
+                barra.style.width = "160px"
+                item.style.marginLeft = "160px"
+                corpo.style.width = "85.5%"
+                corpo.style.marginLeft = "170px"
+                inicio.innerHTML = '<abbr title="Início"><a href="pagina-inicial.html"><img src="../imagens/casa.png" alt="Imagem da Home"><p>Início</p></a></abbr>'
+                perfil.innerHTML = '<abbr title="Perfil"><a href="login.html"><img src="../imagens/perfil.png" alt=""><p>Perfil</p></a></abbr>'
+                streaming.innerHTML = '<abbr title="Streaming"><a href="streaming.html"><img src="../imagens/livro-fechado-objeto-preto.png" alt=""><p>Streaming</p></a></abbr>'
+                carrinho.innerHTML = '<abbr title="Carrinho"><a href="carrinho.html"><img src="../imagens/contorno-do-simbolo-da-interface-comercial-do-carrinho-de-compras.png" alt=""><p>Carrinho</p></a></abbr>'
+                categ.innerHTML = '<abbr title="Categorias"><a href="#"><img src="../imagens/menu-de-pontos.png" alt=""><p>Categorias</p></a></abbr>'
+                config.innerHTML = '<abbr title="Configurações"><a href="#"><img src="../imagens/botao-de-roda-dentada-de-configuracoes.png" alt=""><p>Configurações</p></a></abbr>'
+                inicio.style.display = "flex"
+                perfil.style.display ="flex"
+                perfil.style.width = "160px"
+                inicio.style.width = "160px"
+                streaming.style.width = "160px"
+                carrinho.style.width = "160px"
+                categ.style.width = "160px"
+                config.style.width = "160px"
+                img_prod.style.marginLeft = "10px"
+                
+            }
+        }
+
+    </script>
 </body>
 </html>

@@ -19,9 +19,11 @@ body{
     background-color: rgb(243, 243, 243);
 }
 
+/* Parte superior */
 .sup{
     position: fixed;
     width: 100%;
+    height: 95px;
 }
  /* Cabeçalho */
 .cabeçalho{
@@ -33,16 +35,23 @@ body{
 }
 
 /* Botão de menu */
-.cabeçalho > .menu{
+.cabeçalho > #menu{
     width: 50px;
     height: 60px;
 }
 
-.cabeçalho > .menu > img{
+.cabeçalho > #menu > img{
     width: 28px;
     height: 28px;
     padding-top: 15px;
     padding-left: 12px;
+}
+
+.cabeçalho > #menu > img:hover{
+    width: 30px;
+    height: 30px;
+    padding-top: 14px;
+    padding-left: 11px;
 }
 
 /* Logo da página */
@@ -88,63 +97,239 @@ body{
 
 /* Parte geral do site */
 .geral{
-    width: 1297px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     padding-top: 60px;
 }
 
 /* Barra Lateral */
-.barra-lateral{
+#barra-lateral{
     display: flex;
     flex-direction: column;
-    align-items: center;
     position: fixed;
     width: 50px;
-    height: 570px;
+    height: 100%;
     background-color: #020079;
-}
-
-.cont-barra-lateral{
-    margin-top: 20px;
+    border-right: 1px solid #ffffff;
 }
 
 /*  */
-.barra-lateral > .cont-barra-lateral > .inicio > abbr > a > img{
+#barra-lateral > #cont-barra-lateral > #inicio{
+    width: 50px;
+    height: 45px;
+}
+
+#barra-lateral > #cont-barra-lateral > #inicio:hover{
+    width: 50px;
+    height: 45px;
+    background-color: #020091;
+}
+
+#barra-lateral > #cont-barra-lateral > #inicio > abbr > a > img{
     width: 25px;
     height: 25px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 5px;
+    margin-left: 7px;
 }
 
-.barra-lateral > .cont-barra-lateral > .perfil > abbr > a > img{
+#barra-lateral > #cont-barra-lateral > #inicio > abbr > a > p{
+    margin: 15px 0px 0px 15px;
+    font-size: 14px;
+}
+
+#barra-lateral > #cont-barra-lateral > #inicio > abbr > a{
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#barra-lateral > #cont-barra-lateral > #inicio > abbr{
+    text-decoration: none;
+    display: flex;
+}
+
+
+#barra-lateral > #cont-barra-lateral > #perfil > abbr > a > img{
     width: 28px;
     height: 25px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 5px;
+    margin-left: 7px;
 }
-.barra-lateral > .cont-barra-lateral > .streaming > abbr > a > img{
+
+#barra-lateral > #cont-barra-lateral > #perfil > abbr > a > p{
+    margin: 15px 0px 0px 15px;
+    font-size: 14px;
+}
+
+#barra-lateral > #cont-barra-lateral > #perfil > abbr > a{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+#barra-lateral > #cont-barra-lateral > #perfil > abbr{
+    text-decoration: none;
+}
+
+#barra-lateral > #cont-barra-lateral > #perfil{
+    width: 50px;
+    height: 45px;
+}
+
+#barra-lateral > #cont-barra-lateral > #perfil:hover{
+    width: 50px;
+    height: 45px;
+    background-color: #020091;
+}
+
+#barra-lateral > #cont-barra-lateral > #streaming > abbr > a > img{
     width: 32px;
     height: 30px;
-    padding-top: 20px;
-}
-.barra-lateral > .cont-barra-lateral > .carrinho > abbr > a > img{
-    width: 28px;
-    height: 25px;
-    padding-top: 20px;
+    padding-top: 8px;
+    margin-left: 7px;
 }
 
-.barra-lateral > .cont-barra-lateral > .categ > abbr > a > img{
-    width: 28px;
-    height: 25px;
-    padding-top: 20px;
+#barra-lateral > #cont-barra-lateral > #streaming > abbr > a > p{
+    margin: 15px 0px 0px 15px;
+    font-size: 14px;
 }
 
-.geral > .corpo-pag{
-    width: 1297px;
+#barra-lateral > #cont-barra-lateral > #streaming > abbr > a{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+#barra-lateral > #cont-barra-lateral > #streaming > abbr{
+    text-decoration: none;
+}
+
+#barra-lateral > #cont-barra-lateral > #streaming{
+    width: 50px;
+    height: 45px;
+}
+
+#barra-lateral > #cont-barra-lateral > #streaming:hover{
+    width: 50px;
+    height: 45px;
+    background-color: #020091;
+}
+
+
+#barra-lateral > #cont-barra-lateral > #carrinho > abbr > a > img{
+    width: 28px;
+    height: 25px;
+    padding-top: 7px;
+    margin-left: 9px;
+}
+
+
+#barra-lateral > #cont-barra-lateral > #carrinho > abbr > a > p{
+    margin: 13px 0px 0px 18px;
+    font-size: 14px;
+}
+
+#barra-lateral > #cont-barra-lateral > #carrinho > abbr > a{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+#barra-lateral > #cont-barra-lateral > #carrinho > abbr{
+    text-decoration: none;
+}
+
+#barra-lateral > #cont-barra-lateral > #carrinho{
+    width: 50px;
+    height: 45px;
+}
+
+#barra-lateral > #cont-barra-lateral > #carrinho:hover{
+    width: 50px;
+    height: 45px;
+    background-color: #020091;
+}
+
+#barra-lateral > #cont-barra-lateral > #categ > abbr > a > img{
+    width: 28px;
+    height: 25px;
+    padding-top: 7px;
+    margin-left: 11px;
+}
+
+#barra-lateral > #cont-barra-lateral > #categ > abbr > a > p{
+    margin: 13px 0px 0px 15px;
+    font-size: 14px;
+}
+
+#barra-lateral > #cont-barra-lateral > #categ > abbr > a{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+#barra-lateral > #cont-barra-lateral > #categ > abbr{
+    text-decoration: none;
+}
+
+#barra-lateral > #cont-barra-lateral > #categ{
+    width: 50px;
+    height: 45px;
+}
+
+#barra-lateral > #cont-barra-lateral > #categ:hover{
+    width: 50px;
+    height: 45px;
+    background-color: #020091;
+}
+
+#barra-lateral > #cont-barra-lateral > #config > abbr > a > img{
+    width: 28px;
+    height: 25px;
+    padding-top: 11px;
+    margin-left: 11px;
+}
+
+#barra-lateral > #cont-barra-lateral > #config > abbr > a > p{
+    margin: 13px 0px 0px 15px;
+    font-size: 14px;
+}
+
+#barra-lateral > #cont-barra-lateral > #config > abbr > a{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+#barra-lateral > #cont-barra-lateral > #config > abbr{
+    text-decoration: none;
+}
+
+#barra-lateral > #cont-barra-lateral > #config{
+    width: 50px;
+    height: 45px;
+}
+
+#barra-lateral > #cont-barra-lateral > #config:hover{
+    width: 50px;
+    height: 45px;
+    background-color: #020091;
+}
+
+.geral > #corpo-pag{
+    width: 95%;
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
+    margin-left: 60px;
 }
 
 /* Barra de navegação */
@@ -153,18 +338,17 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    position: fixed;
     background-color: #020079;
 }
 
 /* Item da barra de navegação */
-.nav > .item-{
-    padding: 6px 35px;
+.nav > #item-{
+    padding: 6px 30px;
     color: rgb(255, 255, 255);
     font-family: Calibri, sans-serif;
     font-size: 18px;
     color: #ffffff;
-
+    margin-left: 50px;
 }
 
 /* Área de categorias da barra de navegação */
@@ -175,7 +359,7 @@ body{
 
 /* Categoria da barra de navegação */
 .categorias > .item{
-    padding: 11px 35px;
+    padding: 11px 30px;
     border-left: solid 1px rgb(255, 255, 255);
     border-right: solid 1px rgb(255, 255, 255);
     font-family: 'Josefin Sans', sans-serif;
@@ -188,10 +372,15 @@ body{
     color: rgb(255, 255, 255);
 }
 
+.categorias > .item > a:hover{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
 /* Produtos/Rodapé */
 .resto-da-página{
     padding-top: 35px;
-    width: 1297px;
+    width: 100%;
 }
 
 .rodape{
@@ -218,18 +407,18 @@ body{
 }
 
 .box-rodape > .bloc{
-    width: 275px;
-    height: 275px;
+    width: 225px;
+    height: 225px;
     background-color: rgb(243, 243, 243);
     border-radius: 5px;
-    margin: 25px;
+    margin: 20px;
 }
 .box-rodape > .bloc:hover{
-    width: 275px;
-    height: 275px;
+    width: 225px;
+    height: 225px;
     background-color: rgb(209, 209, 209);
     border-radius: 5px;
-    margin: 25px;
+    margin: 20px;
 }
 
 .box-rodape > .bloc > a{
@@ -247,34 +436,36 @@ body{
 
 .box-rodape > .bloc > a > img{
     padding-top: 30px;
-    height: 65px;
+    height: 50px;
 }
 
 .bloc > a > .text{
-    width: 225px;
+    width: 210px;
     text-align: center;
+    font-size: 16px;
+    margin: 0px;
 }
 
 .box-rodape > .bloc-{
-    width: 275px;
-    height: 275px;
+    width: 225px;
+    height: 225px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(243, 243, 243);
     border-radius: 5px;
-    margin: 25px;
+    margin: 20px;
 }
 
 .box-rodape > .bloc-:hover{
-    width: 275px;
-    height: 275px;
+    width: 225px;
+    height: 225px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(209, 209, 209);
     border-radius: 5px;
-    margin: 25px;
+    margin: 20px;
 }
 
 .box-rodape > .bloc- > h2{
@@ -284,26 +475,27 @@ body{
 
 .box-rodape > .bloc- > img{
     padding-top: 20px;
-    height: 65px;
+    height: 50px;
 }
 
 .bloc- > .cont-pgmt > div > img{
-    height: 45px;
+    height: 35px;
 }
 
 .bloc- > .social-list{
-    width: 275px;
+    width: 250px;
     color: black;
+    margin-top: 0px;
 }
 
 .bloc- > .social-list > li > img{
-    height: 25px;
+    height: 18px;
 }
 
 .bloc- > .social-list > li > a{
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .base-rodape{
@@ -351,7 +543,7 @@ body{
 
 .acesso{
     width: 100%;
-    height: 450px;
+    height: 475px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -377,7 +569,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 200px;
+    height: 350px;
 }
 
 .box-email{
@@ -404,7 +596,6 @@ body{
     flex-direction: column;
     height: 100px;
     width: 300px;
-    margin-bottom: 20px;
 }
 
 .box-senha > h2{
@@ -419,7 +610,12 @@ body{
     border: solid 1px rgb(168, 168, 168);
 }
 
-.entrar > button{
+.entrar{
+    display: flex;
+    justify-content: center;
+}
+
+.entrar > input{
     border: none;
     width: 285px;
     height: 35px;
@@ -431,7 +627,7 @@ body{
     margin-left: 5px;
 }
 
-.entrar > button:hover{
+.entrar > input:hover{
     border: none;
     width: 285px;
     height: 35px;
@@ -447,6 +643,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0px;
 }
 .contas-externas > .botoes > button{
     border: none;
@@ -513,6 +710,13 @@ body{
     height: 35px;
 }
 
+.dados-acesso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+}
+
 .dados-pessoais{
     display: flex;
     flex-direction: column;
@@ -559,7 +763,12 @@ body{
     border: solid 1px rgb(168, 168, 168); 
 }
 
-.cadastro > .botao > button{
+.cadastro > form > .botao{
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro > form > .botao > input{
     border: none;
     width: 200px;
     height: 27px;
@@ -572,7 +781,7 @@ body{
     margin-left: 5px;
 }
 
-.cadastro > .botao > button:hover{
+.cadastro > form > .botao > input:hover{
     border: none;
     width: 200px;
     height: 27px;
